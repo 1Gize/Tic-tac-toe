@@ -13,6 +13,10 @@ class TicTacToe {
       boardCreation()
       println("First player chose your X or 0")
       player1Signature = readLine("Enter X or O: ")
+      while(player1Signature != "X" && player1Signature != "O"){
+        println("Incorect symbol!!!!!")
+        player1Signature = readLine("Enter X or O: ")
+      }
       if(player1Signature == "X"){
         player2Signature = "O"
       }else{
